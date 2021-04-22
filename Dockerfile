@@ -1,6 +1,6 @@
 # *************************************
 #
-# OMO MSA
+# OpenGM
 #
 # *************************************
 
@@ -13,7 +13,7 @@ ENV MSA_MODE release
 
 EXPOSE 9601
 
-ADD omo-msa-account /usr/local/bin/
-RUN chmod +x /usr/local/bin/omo-msa-account
+ADD ogm-account /usr/local/bin/
+RUN chmod +x /usr/local/bin/ogm-account
 
-CMD ["omo-msa-account"]
+CMD ["/usr/local/bin/ogm-account"]
